@@ -1,0 +1,116 @@
+<%- include('partials/header') %>  
+      <main>
+            <section class="cover-page" id="cover-page">
+              <header id="header">
+                <nav id="nav">
+                        <a href="#cover">home</a>
+                        <a href="#services">services</a>
+                        <a href="#contact_form">contact</a>
+                        <a href="#about">about</a>
+                        <a href="./login.ejs">Admin Login</a>
+                </nav>
+                <a href="javascript:void(0);" class="mobileIcon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i></a>
+                </header>
+              <div class="cover-bio" id="cover-bio">
+                <div class="cover-text">
+                  <h1>Jas Brar</h1>
+                  <p>For all your Residential & Commercial needs.
+                   Whether you’re buying, selling, or investing in 
+                   real estate, I’m here to guide you through every 
+                   step of the process. With a deep understanding of 
+                   the market and a commitment to personalized 
+                   service, I strive to make your real estate 
+                   experience smooth, successful, and stress-free.</p>
+                </div>  
+                <div class="cover-image">
+                      <img src="./coverpage/bio.jpg" />
+                </div>
+              </div>
+            </section>
+
+            <section class="flipCard">
+                <h1>Services</h1>
+                <div class="flipCard-container">
+                <article>
+                  <div class="card">
+                    <div class="card-front front1">
+                      Buying a Home
+                    </div>
+                    <div class="card-back back1">
+                      Finding the perfect home can be overwhelming.
+                    </div>
+                 </div>
+                </article>
+                <article>
+                  <div class="card">
+                    <div class="card-front front2">Front</div>
+                    <div class="card-back back2">Back</div>
+                 </div>
+                </article>
+                <article>
+                  <div class="card">
+                    <div class="card-front front3">Front</div>
+                    <div class="card-back back3">Back</div>
+                 </div>
+                </article>
+                </div>
+            </section>
+
+            <section class="gallary" id="gallary">
+              <div class="gallary-text">
+                <h1>REALTOR® services encompass a wide range of real estate activities,
+                 including buying, selling, and managing property.</h1>
+              </div>
+              <div class="gallary-images">
+                  <div class="hex g1"><img src="./gallary/g1.png" alt="" class="gimage"></div>
+                  <div class="hex g2"><img src="./gallary/g2.png" alt="" class="gimage"></div>
+                  <div class="hex g3"><img src="./gallary/g3.png" alt="" class="gimage"></div>
+                  <div class="hex g4"><img src="./gallary/g1.png" alt="" class="gimage"></div>
+                  <div class="hex g5"><img src="./gallary/g3.png" alt="" class="gimage"></div>
+              </div>
+            </section>
+
+            <section id="contact-form">
+              <form>
+                <h1>Talk to Us</h1>
+                <div class="form-container">
+                  
+                  <!-- First Name -->
+                  <div class="form-items">
+                    <label for="formName" class="form-label">First Name</label>
+                    <input type="text" id="formName" class="form-input">
+                  </div>
+                  
+                  <!-- Last Name -->
+                  <div class="form-items">
+                    <label for="formName" class="form-label">Last Name</label>
+                    <input type="text" id="formName" class="form-input">
+                  </div>
+
+                  <!-- E-mail -->
+                  <div class="form-items">
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" id="formEmail" class="form-input">
+                  </div>
+
+                  <!-- Contact Number -->
+                  <div class="form-items">
+                    <label for="formContactNumber" class="form-label">Contact Number</label>
+                    <input type="number" id="formContactNumber" class="form-input">
+                  </div>
+                  <!-- Message -->
+                  <div class="form-items" id="form-textarea">
+                    <label for="formContactNumber" class="form-label">Message</label>
+                    <textarea id="formMessage" class="form-input"></textarea>
+                  </div>
+                  <!-- Submit btn -->
+                  <div class="form-items form-btn">
+                    <button type="submit" class="btn" tabIndex="-1">Send message</button>
+                  </div>
+                </div>
+              </form>   
+            </section>
+        </main>
+        <%- include('partials/footer') %>
+       
